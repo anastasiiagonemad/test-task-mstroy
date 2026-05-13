@@ -1,0 +1,35 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MStroy frontend test task",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "ag-grid",
+    "tree-store"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/vue": "^8.1.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/test-utils": "^2.4.10",
+    "ag-grid-community": "^35.3.0",
+    "ag-grid-enterprise": "^35.3.0",
+    "ag-grid-vue3": "^35.3.0",
+    "jsdom": "^29.1.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.6",
+    "vue": "^3.5.34"
+  }
+}

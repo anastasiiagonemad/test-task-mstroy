@@ -1,0 +1,108 @@
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #10233b;
+  background:
+    radial-gradient(circle at top left, rgba(245, 186, 76, 0.35), transparent 32%),
+    linear-gradient(180deg, #f6f8fb 0%, #eef3f9 100%);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(1180px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 40px 0 56px;
+}
+
+.hero-card,
+.grid-card {
+  border: 1px solid rgba(16, 35, 59, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 22px 60px rgba(42, 68, 102, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.hero-card {
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #bf6a02;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.lead {
+  margin: 16px 0 0;
+  max-width: 720px;
+  color: #425b78;
+  font-size: 1.05rem;
+}
+
+.grid-card {
+  padding: 20px;
+}
+
+.tree-grid {
+  width: 100%;
+}
+
+.ag-theme-quartz {
+  --ag-font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --ag-border-radius: 18px;
+  --ag-row-height: 52px;
+  --ag-header-height: 52px;
+  --ag-background-color: #ffffff;
+  --ag-header-background-color: #f5f7fb;
+  --ag-odd-row-background-color: #fbfcfe;
+  --ag-selected-row-background-color: rgba(191, 106, 2, 0.12);
+  --ag-accent-color: #bf6a02;
+  --ag-foreground-color: #10233b;
+  --ag-header-foreground-color: #10233b;
+  --ag-border-color: rgba(16, 35, 59, 0.12);
+  --ag-row-border-color: rgba(16, 35, 59, 0.08);
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    width: min(100vw - 20px, 100%);
+    padding: 20px 0 32px;
+  }
+
+  .hero-card,
+  .grid-card {
+    border-radius: 18px;
+  }
+
+  .hero-card {
+    padding: 24px;
+  }
+
+  .grid-card {
+    padding: 14px;
+  }
+}
